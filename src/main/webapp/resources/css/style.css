@@ -1,0 +1,12 @@
+@charset "UTF-8";
+body{
+	font-size:x-large;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+	color: fuchsia;
+}
+h2 {
+    color: Blue;
+    text-align: left;
+}

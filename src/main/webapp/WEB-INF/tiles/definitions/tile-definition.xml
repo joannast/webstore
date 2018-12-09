@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="baseLayout" template="/WEB-INF/tiles/template/baseLayout.jsp">
+		<put-attribute name="title" value="MISIOWANKI.PL" />
+		<put-attribute name="heading" value="" />
+		<put-attribute name="tagline" value="" />
+		<put-attribute name="navigation" value="/WEB-INF/tiles/template/navigation.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+	
+	<definition name="welcome" extends="baseLayout">
+		<put-attribute name="title" value="MISIOWANKI.PL" />
+		<put-attribute name="heading" value="Witaj w najlepszym i wyjątkowym sklepie z misiami !" />
+		<put-attribute name="tagline" value="Tu kupisz wymarzonego misia do przytulania :-)" />
+		<put-attribute name="content" value="/WEB-INF/views/welcome.jsp" />
+	</definition>
+	
+	<definition name="products" extends="baseLayout">
+		<put-attribute name="title" value="Produkty" />
+		<put-attribute name="heading" value="Produkty" />
+		<put-attribute name="tagline" value="w naszym sklepie" />
+		<put-attribute name="content" value="/WEB-INF/views/products.jsp" />
+	</definition>
+	
+	<definition name="product" extends="baseLayout">
+		<put-attribute name="title" value="Produkty" />
+		<put-attribute name="heading" value="Produkty" />
+		<put-attribute name="tagline" value="Produkt" />
+		<put-attribute name="content" value="/WEB-INF/views/product.jsp" />
+	</definition>
+	
+	<definition name="addProduct" extends="baseLayout">
+		<put-attribute name="title" value="Produkty" />
+		<put-attribute name="heading" value="Baza produktów" />
+		<put-attribute name="tagline" value="Aktualizacja" />
+		<put-attribute name="content" value="/WEB-INF/views/addProduct.jsp" />
+	</definition>
+	
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="title" value="Zaloguj się" />
+		<put-attribute name="heading" value="PANEL ADMINISTRATORA" />
+		<put-attribute name="tagline" value="Dostęp po zalogowaniu się" />
+		<put-attribute name="content" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="cart" extends="baseLayout">
+		<put-attribute name="title" value="Koszyk" />
+		<put-attribute name="heading" value="Koszyk" />
+		<put-attribute name="tagline" value="Produkty w koszyku" />
+		<put-attribute name="content" value="/WEB-INF/views/cart.jsp" />
+	</definition>
+	
+	<definition name="collectCustomerInfo" extends="baseLayout">
+		<put-attribute name="title" value="Dane klienta" />
+		<put-attribute name="heading" value="Dane klienta" />
+		<put-attribute name="content" value="/WEB-INF/views/addOrder.jsp" />
+	</definition>
+<definition name="thanksCustomer" extends="baseLayout">
+		<put-attribute name="title" value="Dziekujemy!" />
+		<put-attribute name="heading" value="Dziękujemy za złożenie zamówienia!" />
+		<put-attribute name="content" value="/WEB-INF/views/thanksCustomer.jsp" />
+	</definition>
+	
+</tiles-definitions>
